@@ -22,7 +22,8 @@ const getImage = (name) => imageMap[name] || "";
 
 const Home = () => {
     const { selected, playVideo, handleSelect } = useHomeLogic();
-
+    console.log(playVideo , playVideo)
+    console.log(selected)
     useEffect(() => {
         const container = document.querySelector(".trending-items-wrapper");
         const onWheel = (e) => {
@@ -38,8 +39,7 @@ const Home = () => {
     return (
         <div className="home-container">
             <SidebarMenu />
-
-            {!playVideo ? (
+            {!playVideo || !selected.VideoUrl ? (
                 <img src={getImage(selected.CoverImage)} alt="" className="bg-image" />
             ) : (
                 <video

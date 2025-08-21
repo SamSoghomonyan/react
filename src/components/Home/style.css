@@ -1,0 +1,54 @@
+.home-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.bg-image, .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    z-index: -2;
+    transition: opacity 0.5s ease-in-out;
+    background: black;
+}
+
+.overlay {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px;
+    background: rgba(0,0,0,0.6);
+    box-sizing: border-box;
+}
+
+.featured-content {
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.category { font-size: 14px; opacity: 0.8; text-transform: uppercase; }
+.title { font-size: 48px; margin-bottom: 10px; }
+.meta { font-size: 16px; opacity: 0.9; margin-bottom: 15px; }
+.description { font-size: 18px; margin-bottom: 20px; }
+
+.buttons button {
+    padding: 10px 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.play { background: white; color: black; }
+.info { background: #007bff; color: white; }
+
+.trending-section { margin-top: 40px; }
+.trending-items { display: flex; gap: 10px; overflow-x: auto; }

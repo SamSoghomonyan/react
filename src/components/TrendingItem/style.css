@@ -1,0 +1,11 @@
+.trending-item {
+    flex: 0 0 auto;
+    width: 150px;
+    cursor: pointer;
+}
+
+.trending-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
